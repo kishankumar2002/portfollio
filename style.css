@@ -1,0 +1,287 @@
+@import'utilities.css';
+:root{
+    --primary:#3ac7cc;
+    --dark:#161616fb;
+    --pure:#ffffffc4;
+    --turnary:#898989;
+    --light:hsla(0, 0%, 0%, 0.603);
+    --secondary:#070606;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    --webkit-font-smothing:antialiased:
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0,100% 100%,70% 90%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
+color: var(--pure);
+text-decoration: none;
+margin-right: 2rem;
+text-transform: uppercase;
+transition: all.3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+.hero{
+    padding: 2rem 0;
+}
+.hero .left img{
+width: 400px;
+length: 50px;
+
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h4{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.hero .right h1{
+    font-size: 3.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: .9rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+.hero .right h1 span{
+color: var(--primary);
+}
+.hero .right p{
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 1;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+section {
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 450px;
+    border-radius: 8%;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    background: var(--primary);
+    text-decoration: underline;
+}
+section.about p{
+    text-transform: capitalize;
+    padding: 1rem 0;
+    
+}
+
+.hero .right h4{
+    animation: type 6s steps(25) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid dark;
+    width: 25ch;
+}
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 25ch;
+    }
+}
+section.about h1 span{
+    color: var(--pure);
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a img{
+width: 100%;
+height: 100%;
+padding: 0.4rem;
+}
+section.about .social a:hover{
+    background: var(--primary);
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color: var(--turnary);
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.section-heading span{
+    color: var(--primary);
+}
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:5rem;
+    grid-column-gap: 2rem;
+}
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all.3s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top:-2.5rem;
+    left:50%;
+    transform: translatex(-50%);
+    padding: 0.4rem;
+    background: var(--primary);
+    height: 90px;
+}
+section.services .card-wrapper .card h2{
+font-weight: 700;
+font-size: 1.2rem;
+margin-bottom:0.5rem;
+}
+section.services .card-wrapper .card p{
+    color: var(--turnary);
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+color: var(--pure);
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/kishan/camera.png);
+    color: var(--pure);
+    text-transform: capitalize;
+    line-height: 1.6;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%,67% 80%, 0% 100%);
+    padding-bottom: 10rem;
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+}
+section .about .social{
+    width: 200px;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:3rem;
+
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+    height: 120px;
+}
+section.contact .card-wrapper .card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--turnary);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+section.contact input:focus,section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer-socials a{
+    margin-right: 1rem;
+}
+footer .footer-socials{
+    margin-bottom: 3rem;    
+}
+footer .thanks{
+    color: var(--pure);
+}
